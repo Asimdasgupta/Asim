@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asim - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to right, #3B82F6, #9333EA);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(26, 139, 139);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #ffffff;
+            height: 1.2px;
+            margin: 20px 5px;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 83px 0;
+            /* align-items: center;
+            height: 100vh; */
+        }
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .leftSection img {
+            transition: transform 0.3s ease;
+            width: 20%;
+            height: auto;
+            margin: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #000000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            /* background-color: rgb(242, 235, 38); */
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+            margin: 50px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #8984f3;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 85%;
+            margin: 50px 0;
+            /* background-color: rgb(242, 235, 38); */
+        }
+
+        .black {
+            color: black;
+        }
+
+        #element {
+            color: aqua
+        }
+
+        .SecondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .SecondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 36px 0;
+            display: flex;
+        }
+
+        .SecondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: antiquewhite;
+            margin: 0 180px;
+        }
+
+        .text-purple {
+            color: rgb(0, 179, 255);
+            font-size: 1.5rem;
+        }
+
+        .vertical-tittle {
+            position: relative;
+            top: 100%;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 100px;
+            color: aquamarine;
+            width: 150px;
+            font-size: 13px;
+        }
+
+        footer {
+            background-color: teal;
+            /* height: 200px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(31, 37, 45);
+            padding: 12px 0;
+        }
+        @media screen and (max-width: 00px) {
+          body{
+            /* background-color: red; */
+          }
+          .box{
+            flex-direction: column;
+          }
+          .SecondSection .vertical{
+            height: unset;
+          }
+          .vertical-tittle, .vertical-desc{
+            left:45px;
+          }
+          .firstSection{
+            flex-direction: column-reverse;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Asim Dasgupta</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <img src="profile.png.jpg" alt="">
+                <span class="black">
+                    <h1>Hi, I am Asim</h1>
+                    <h3>and I am a Web-Developer...</h3>
+                </span>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Linkdin</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="front .png.webp" alt="">
+            </div>
+        </section>
+
+        <section class="SecondSection">
+            <hr>
+            <span class="text-purple">What I have achieved</span>
+            <h1>My Achievements</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-tittle">
+                        Winners of "Nurturing Innovation organized by MCKVIE" in 2024
+                    </div>
+                    <div class="vertical-desc">
+                        This event will be organized by MCKVIE and We are the champoins of this event out of 24 teams.
+                        We are certified by our college for this event and we are achieved this in our 1st year of
+                        Btech.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-tittle">
+                        Qualified for Phase 7 under "Innovator Garage" in 2025
+                    </div>
+                    <div class="vertical-desc">
+                        This is a innovative event organized by Mahindra Company aand we are qualified for the phase 7 .
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-tittle">
+                        Finalist of Galgotia International Hackathon (GIH) in 2025
+                    </div>
+                    <div class="vertical-desc">
+                        This hackathon is based on the developement of a project and we are the finalist of this event.
+                        I have increased my knowledge about the developement of a project and I have learned many things
+                        from this event.
+                    </div>
+                </div>
+                <!-- <div class="vertical">
+                    Qualified for Phase 7 under "Innovator Garage" in 2025
+                </div>
+                <div class="vertical">
+                    Finalist of Galgotia International Hackathon (GIH) in 2025
+                </div> -->
+            </div>
+        </section>
+        <!-- <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section> -->
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Asim Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+            <div class="footer-fourth">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.asim's porfolio.com | All rights reserved &copy; 2025
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>WELCOME</i> TO MY PROFESSIONAL PORTFOLIO PAGE.', 'IF YOU WANT TO KNOW MORE ABOUT ME, CHECK OUT THE DETAILS GIVEN IN THIS WEBPAGE.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
